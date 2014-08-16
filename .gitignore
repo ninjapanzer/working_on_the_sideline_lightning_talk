@@ -2,3 +2,4 @@ node_modules
 builds/*
 bower_components
 .bundle
+*.html
