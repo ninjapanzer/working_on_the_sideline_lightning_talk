@@ -11,16 +11,18 @@ html(lang="en")
   body
     .reveal
       .slides
-        +titleSlide({title: "Quick Presentations With RevealJade",subtitle: "I know right?"})
-        +ulSlide("Get Started", [
-          "npm install -g bower grunt",
-          "npm install",
-          "bower install",
-          "grunt serve",
-          "go to localhost:8000/example/"
+        +titleSlide({title: "Be the Middleman",subtitle: "MVC ShmenVC"})
+        +ulSlide("Where does it fit in", [
+          "Don't need a database",
+          "Host for cheap (free)",
+          "Get back to your roots"
           ])
-        +bigTitleSlide("I am a big title slide")
-          p Enjoy
+        +bigTitleSlide("Let's Talk about Rails")
+          p Very popular web application framework with a tight focus on productivity
+          p Its a little heavy for a simple website but it has so much great stuff baked in!
+        +slide()
+          p MMMMMMMM....
+          img(src='assets/apple_pie.jpg')
         +slide()
           p This is a normal Slide. Just nest jade under me
         +slideGroup()
