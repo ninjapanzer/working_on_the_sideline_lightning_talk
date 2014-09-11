@@ -1,0 +1,43 @@
+- var revealLocation = 'bower_components/reveal.js/'
+doctype html
+html(lang="en")
+
+  include bower_components/RevealJade/shared/slide_mixins
+
+  include bower_components/RevealJade/shared/head
+
+  link(rel='external' type='text/html' src="bower_components/RevealJade/shared/head.jade")
+
+  body
+    .reveal
+      .slides
+        +titleSlide({title: "Working on the Sidelines",subtitle: "Making Partime Effective"})
+        +ulSlide("Projects Unfinished", [
+          "Just look at my github",
+          "Absence does NOT make the heart grow fonder",
+          "Don't get bogged down with ceremony"
+          ])
+        +bigTitleSlide("Ceremony :(")
+          p You have to learn you are not at work and no one is paying you
+
+        +slide
+          :markdown
+            # Take risks
+            ### If it slow going see previous slide
+
+        +slide
+          :markdown
+            # Its about happpiness
+            ### Not money
+
+          aside.notes
+            p If you only do things for money you will end up unhappy
+            p work for praise
+
+        +bigTitleSlide("Finally")
+          p Talk about your work
+          aside.notes
+            p The best part of doing side work is showing it off
+            p my best known work even at work was a sideline effort if I hadn't shared it I would never have been praised for it
+
+    include bower_components/RevealJade/shared/footer
