@@ -11,26 +11,33 @@ html(lang="en")
   body
     .reveal
       .slides
-        +titleSlide({title: "Be the Middleman",subtitle: "MVC ShmenVC"})
-        +ulSlide("Where does it fit in", [
-          "Don't need a database",
-          "Host for cheap (free)",
-          "Get back to your roots"
+        +titleSlide({title: "Working on the Sidelines",subtitle: "Making Partime Effective"})
+        +ulSlide("Projects Unfinished", [
+          "Just look at my github",
+          "Absence does NOT make the heart grow fonder",
+          "Don't get bogged down with ceremony"
           ])
-        +bigTitleSlide("Let's Talk about Rails")
-          p Very popular web application framework with a tight focus on productivity
-          p Its a little heavy for a simple website but it has so much great stuff baked in!
-        +slide()
-          p MMMMMMMM....
-          img(src='assets/apple_pie.jpg')
-        +slide()
-          p This is a normal Slide. Just nest jade under me
-        +slideGroup()
-          +bigTitleSlide("First Slide in a group")
-          +bigTitleSlide("Last Slide in a group")
+        +bigTitleSlide("Ceremony :(")
+          p You have to learn you are not at work and no one is paying you
+
         +slide
           :markdown
-            # Markdown flavored Slide
-            ## Thank you Jade
+            # Take risks
+            ### If it slow going see previous slide
+
+        +slide
+          :markdown
+            # Its about happpiness
+            ### Not money
+
+          aside.notes
+            p If you only do things for money you will end up unhappy
+            p work for praise
+
+        +bigTitleSlide("Finally")
+          p Talk about your work
+          aside.notes
+            p The best part of doing side work is showing it off
+            p my best known work even at work was a sideline effort if I hadn't shared it I would never have been praised for it
 
     include bower_components/RevealJade/shared/footer
